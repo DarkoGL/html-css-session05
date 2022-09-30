@@ -110,9 +110,20 @@ header nav .right:last-child {
 }
 
 main {
-  padding: 80px 0;
+  padding: 80px 0 40px;
 }
-main .nav ul {
+main .main__nav ul {
   display: flex;
   list-style: none;
+  gap: 20px;
+}
+main .main__nav ul li {
+  padding: 8px;
+}
+
+.main__news {
+  display: grid;
+  gap: 40px;
+  grid-template-areas: "a a a a ";
+  grid-template-rows: 1fr 16px;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,21 @@
 @import './reset.scss';
 
+$layout_bp_mobile: 320px;
+$layout_bp_tablet: 800px;
+$layout_bp_desktop: 1280px;
+
+//SCSS Mixins
+@mixin tablet {
+    @media only screen and (min-width: #{$layout_bp_tablet}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width: #{$layout_bp_desktop}){
+        @content;
+    }
+}
+
 header{
     height: 400px;
     display: flex;
@@ -66,12 +82,31 @@ header{
 }
 
 main{
-    padding: 80px 0;
+    padding: 80px 0 40px;
 
-    .nav{
+    .main__nav{
         ul{
             display: flex;
             list-style: none;
+            gap: 20px;
+
+            li{
+                padding: 8px;
+            }
         }
     }
+}
+
+.main__news{
+    display: grid;
+    gap: 40px;
+    grid-template-areas: "a";
+}
+
+@include tablet{
+    grid-template-areas: "a a";
+}
+
+@include desktop{
+    grid-template-areas: "a a a a";
 }
