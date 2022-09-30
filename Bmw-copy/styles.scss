@@ -1,0 +1,77 @@
+@import './reset.scss';
+
+header{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("./assets/bmw-background.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 2px solid green;
+
+    nav{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid green;
+        
+        .left{
+            padding: 10px 0;
+            border: 2px solid green;
+
+            ul{
+                display: flex;
+                gap: 16px;
+
+                li{
+                    border: 1px solid red;
+                }
+            }
+        }
+        .right{
+            padding: 10px 0;
+            border: 2px solid green;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            &:last-child{
+                height: 40px;
+            }
+        }
+    }
+
+    
+}
+
+.header__content{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+    font-weight: 700;
+
+    a{
+        padding: 16px;
+        width: 140px;
+        text-align: center;
+        background-color: lightblue;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+main{
+    padding: 80px 0;
+
+    .nav{
+        ul{
+            display: flex;
+            list-style: none;
+        }
+    }
+}

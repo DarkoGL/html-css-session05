@@ -1,0 +1,33 @@
+.main {
+  border: 2px solid dodgerblue;
+}
+.main__box {
+  background-color: bisque;
+  height: 100px;
+  width: 100px;
+}
+@media only screen and (min-width: 800px) {
+  .main__box {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .main__box {
+    width: 600px;
+  }
+}
+.main__box--small {
+  font-size: 14px;
+  height: 50px;
+  width: 50px;
+}
+.main__box--big {
+  width: 150px;
+  height: 150px;
+}
+.main__box--blue {
+  background-color: blue;
+}
+.main__box--red {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
